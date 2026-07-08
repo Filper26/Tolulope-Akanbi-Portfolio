@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academic Planner | Tolulope Akanbi</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">Tolulope Akanbi</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Toggle Navigation">☰</button>
+
+        <ul class="nav-links">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+
+          <li class="dropdown">
+            <a href="javascript:void(0);" class="dropdown-toggle"> Menu ▾ </a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Me</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="academic planner.html">Academic Planner</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Academic Planner</h1>
+
+        <p>
+          Organise your academic activities and keep track of important tasks.
+        </p>
+
+        <a href="#planner" class="btn"> Open Planner </a>
+      </div>
+    </section>
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main>
+      <section id="planner" class="planner-section">
+        <h2>Academic Planner</h2>
+
+        <div class="planner-form">
+          <div class="input-group">
+            <label for="taskName">Task Name</label>
+            <input type="text" id="taskName" placeholder="Enter a task" />
+          </div>
+
+          <div class="date-time-container">
+            <div class="input-group">
+              <label for="taskDate">Date</label>
+              <input type="date" id="taskDate" />
+            </div>
+
+            <div class="input-group">
+              <label for="taskTime">Time</label>
+              <input type="time" id="taskTime" />
+            </div>
+          </div>
+
+          <button id="addTaskBtn" class="planner-btn add-btn">Add Task</button>
+        </div>
+
+        <section class="task-list">
+          <h2>List of Tasks</h2>
+
+          <div id="taskContainer">
+            <!-- Tasks appear here automatically -->
+          </div>
+        </section>
+
+        <div class="planner-buttons">
+          <button id="deleteTaskBtn" class="planner-btn delete-btn">
+            Delete Task
+          </button>
+
+          <button id="completeTaskBtn" class="planner-btn complete-btn">
+            Mark as Completed
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+      <p>&copy; 2026 Tolulope Akanbi. All Rights Reserved.</p>
+    </footer>
+
+    <!-- External JavaScript -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
